@@ -15,6 +15,10 @@ export default function DrawerHome() {
         title="Chuyển đến index"
         onPress={() => router.back()}
       />
+      <Button
+        title="Chuyển đến expolre"
+        onPress={() => router.push('/(drawer)/expolre')}
+      />
     </View>
   );
 }
