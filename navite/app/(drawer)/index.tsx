@@ -17,7 +17,7 @@ export default function DrawerHome() {
       />
       <Button
         title="Chuyển đến expolre"
-        onPress={() => router.push('/(drawer)/expolre')}
+        onPress={() => router.push('/(drawer)/explore')}
       />
     </View>
   );

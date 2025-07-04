@@ -26,6 +26,7 @@ export default function DrawerLayout() {
         name="explore"
         options={{
           drawerLabel: 'Trình Duyệt Drawer',
+           title: 'Trình Duyệt Drawer',
         }}
       />
     </Drawer>

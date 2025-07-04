@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View ,TouchableOpacity } from 'react-native'
 import React from 'react'
-import { Tabs } from 'expo-router'
+import { Tabs , } from 'expo-router'
 import { IconSymbol } from '@/components/ui/IconSymbol'
 
 
@@ -19,7 +19,8 @@ const _layout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'trang chủ',
+          
+          title: 'Trang chủ', 
           tabBarButton: ({ children, onPress }) => (
               <TouchableOpacity onPress={onPress} activeOpacity={0.7} style={styles.tabItem}>
                 {children}
