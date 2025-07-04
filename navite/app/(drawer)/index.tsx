@@ -1,14 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { View, Button, Text } from 'react-native';
+import { useRouter } from 'expo-router';
 
-const index = () => {
+export default function DrawerHome() {
+  const router = useRouter();
+
   return (
     <View>
-      <Text> drawer index</Text>
+        <Text>Đây là trang Home thứ 2 ở trong drawer</Text>
+      <Button
+        title="Chuyển đến Tab"
+        onPress={() => router.push('/(drawer)/(tab)')}
+      />
+       <Button
+        title="Chuyển đến index"
+        onPress={() => router.back()}
+      />
     </View>
-  )
+  );
 }
-
-export default index
-
-const styles = StyleSheet.create({})

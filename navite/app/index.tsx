@@ -8,8 +8,8 @@ const index = () => {
     <SafeAreaProvider>
         <SafeAreaView>
             <View>
-                <Text>index</Text>
-                <Button title="click" onPress={()=> router.push('/(drawer)/(tabs)/explore')}></Button>
+                <Text>Đây là trang Home chính</Text>
+                <Button title="click" onPress={()=> router.push('/(drawer)')}></Button>
                 </View>
         </SafeAreaView>
     </SafeAreaProvider>
